@@ -36,7 +36,8 @@ export function Presentation() {
               Musings and Predictions on the future of software engineering
             </h1>
             <p className="!m-0 !mt-[1em] max-w-[22em] text-[0.46em] leading-[1.25] font-semibold text-blue-100">
-              It's the end of the world <em>as we know it</em> and I feel fine
+              It's the end of the world <em className="text-amber-400">as we know it</em> and I
+              feel fine
             </p>
           </div>
 
@@ -45,7 +46,7 @@ export function Presentation() {
             aria-label={`${speaker.name}, ${speaker.title}`}
           >
             <img
-              className="h-[1.35em] w-[1.35em] rounded-full border-[0.06em] border-white/70 object-cover"
+              className="h-[1.35em] w-[1.35em] rounded-full border-[0.06em] border-amber-400 object-cover"
               src={speaker.image}
               alt={speaker.name}
             />
