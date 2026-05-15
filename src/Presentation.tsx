@@ -8,6 +8,8 @@ const speaker = {
   image: '/profile.jpg',
 }
 
+const titleBackground = '/title-background.jpg'
+
 export function Presentation() {
   return (
     <Deck
@@ -19,7 +21,12 @@ export function Presentation() {
         transition: 'fade',
       }}
     >
-      <Slide backgroundGradient="linear-gradient(135deg, #07111f 0%, #102a43 45%, #f59e0b 160%)">
+      <Slide
+        backgroundColor="#07111f"
+        backgroundImage={titleBackground}
+        backgroundPosition="center"
+        backgroundSize="cover"
+      >
         <div className="title-slide">
           <div className="speaker-card" aria-label={`${speaker.name}, ${speaker.title}`}>
             <img className="speaker-photo" src={speaker.image} alt={speaker.name} />
