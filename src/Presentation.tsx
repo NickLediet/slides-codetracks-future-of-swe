@@ -27,27 +27,8 @@ export function Presentation() {
         backgroundPosition="center"
         backgroundSize="cover"
       >
-        <div className="grid min-h-full grid-rows-[auto_1fr] items-center px-[0.2em] py-[0.45em]">
-          <div
-            className="inline-flex w-fit items-center gap-[0.5em] rounded-full border border-white/20 bg-slate-950/70 px-[0.55em] py-[0.35em] shadow-2xl backdrop-blur-[18px]"
-            aria-label={`${speaker.name}, ${speaker.title}`}
-          >
-            <img
-              className="h-[2em] w-[2em] rounded-full border-[0.08em] border-white/70 object-cover"
-              src={speaker.image}
-              alt={speaker.name}
-            />
-            <div>
-              <p className="!m-0 text-[0.38em] leading-[1.1] font-extrabold text-slate-50">
-                {speaker.name}
-              </p>
-              <p className="!m-0 !mt-[0.18em] text-[0.24em] leading-[1.25] font-semibold text-slate-300">
-                {speaker.title}
-              </p>
-            </div>
-          </div>
-
-          <div className="max-w-[11.5em] self-end">
+        <div className="grid h-[720px] grid-rows-[1fr_auto] items-center px-[0.2em] py-[0.45em]">
+          <div className="max-w-[11.5em] self-center">
             <p className="!m-0 text-[0.32em] leading-[1.1] font-extrabold tracking-[0.18em] text-amber-400 uppercase">
               CodeTracks
             </p>
@@ -57,6 +38,25 @@ export function Presentation() {
             <p className="!m-0 !mt-[1em] max-w-[22em] text-[0.46em] leading-[1.25] font-semibold text-blue-100">
               It's the end of the world as we know it and I feel fine
             </p>
+          </div>
+
+          <div
+            className="inline-flex w-fit items-center gap-[0.4em]"
+            aria-label={`${speaker.name}, ${speaker.title}`}
+          >
+            <img
+              className="h-[1.35em] w-[1.35em] rounded-full border-[0.06em] border-white/70 object-cover"
+              src={speaker.image}
+              alt={speaker.name}
+            />
+            <div>
+              <p className="!m-0 text-[0.32em] leading-[1.1] font-extrabold text-slate-50">
+                {speaker.name}
+              </p>
+              <p className="!m-0 !mt-[0.16em] text-[0.22em] leading-[1.25] font-semibold text-slate-300">
+                {speaker.title}
+              </p>
+            </div>
           </div>
         </div>
       </Slide>
