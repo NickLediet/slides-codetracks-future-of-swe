@@ -36,7 +36,7 @@ export function Presentation() {
               Musings and Predictions on the future of software engineering
             </h1>
             <p className="!m-0 !mt-[1em] max-w-[22em] text-[0.46em] leading-[1.25] font-semibold text-blue-100">
-              It's the end of the world as we know it and I feel fine
+              It's the end of the world <em>as we know it</em> and I feel fine
             </p>
           </div>
 
